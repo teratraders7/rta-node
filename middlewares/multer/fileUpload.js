@@ -26,7 +26,7 @@ const storeFile = multer.diskStorage({
 export const uploadFile = multer({
     storage : storeFile,
     limits : {
-        fileSize : 1024 * 1024 * 10
+        fileSize : 1024 * 1024 * 40
     },
     fileFilter : (req, file, cb) => {
         checkMimeType(file,cb)
