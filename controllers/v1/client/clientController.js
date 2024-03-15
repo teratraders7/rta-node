@@ -20,7 +20,7 @@ export const getPdfPath = async (req, res, next) => {
                 status : true,
                 message : '',
                 access_token : null,
-                data : file.file
+                data : file
               })
             // }
          }
