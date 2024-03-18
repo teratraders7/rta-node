@@ -15,7 +15,7 @@ const storeFile = multer.diskStorage({
         cb(null, pathDirectory)
     },
     filename : (req, file, cb) => {
-        const filename = formatFileName(file.originalname)
+        const filename = file.originalname
         cb(
             null,
             filename
